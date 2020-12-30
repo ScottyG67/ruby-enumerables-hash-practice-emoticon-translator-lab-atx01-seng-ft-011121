@@ -28,6 +28,7 @@ def load_library(file_path)
     emote_array.each do |index|
       if emote_array(index) = 0
         
+        
       
   
   
