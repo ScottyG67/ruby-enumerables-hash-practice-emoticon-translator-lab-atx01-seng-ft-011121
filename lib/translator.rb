@@ -6,7 +6,7 @@ require 'pry'
 def load_library
   # code goes here
   require 'yaml'
-  hash = YAML.load("./lib/emoticons.yml")
+  YAML.load("./lib/emoticons.yml")
   binding.pry
 end
 
