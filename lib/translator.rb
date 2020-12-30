@@ -24,7 +24,11 @@ def load_library(file_path)
   #   newhash[new_key][:japanese] = item_array(1)
   
   libary = unformatted_libary.each_with_object({}) do |(emote_name,emote_array),formatted_libary|
-    formatted_libary
+    formatted_libary[emote_name]={:english => nil, :japanese => nil}
+    emote_array.each do |index|
+      if emote_array(index) = 0
+        
+      
   
   
   hash
