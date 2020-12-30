@@ -28,10 +28,10 @@ def load_library(file_path)
     binding.pry
     emote_array.each do |index|
       if emote_array(index) == 0
-        formatted_libary[emote_name][:english] => emote_array(index)
+        formatted_libary[emote_name][:english] = emote_array(index)
         binding.pry
       elsif emote_array(index) == 1
-        formatted_libary[emote_name][:japanese] => emote_array(index)
+        formatted_libary[emote_name][:japanese] = emote_array(index)
         binding.pry
       else
         puts "Unexpected array index"
