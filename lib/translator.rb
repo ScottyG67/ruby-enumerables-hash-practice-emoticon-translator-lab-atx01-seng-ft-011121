@@ -1,5 +1,5 @@
 # require modules here
-Require 'yaml'
+$require 'yaml'
 Require 'pry'
 
 
