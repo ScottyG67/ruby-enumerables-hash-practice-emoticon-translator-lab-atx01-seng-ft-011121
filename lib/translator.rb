@@ -30,14 +30,14 @@ def load_library(file_path)
       #binding.pry
       if index == 0
         formatted_libary[emote_name][:english] = emote
-        #binding.pry
+
       elsif index == 1
         formatted_libary[emote_name][:japanese] = emote
-        #binding.pry
+
       end
     end
   end
-  #binding.pry
+
   libary
 end
 
