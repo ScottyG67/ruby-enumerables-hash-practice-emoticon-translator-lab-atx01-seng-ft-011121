@@ -40,6 +40,7 @@ def load_library(file_path)
       end
     end
   end
+  libary
 end
 
 def get_japanese_emoticon
