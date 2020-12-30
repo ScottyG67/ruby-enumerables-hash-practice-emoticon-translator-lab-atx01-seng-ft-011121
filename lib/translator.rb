@@ -5,9 +5,6 @@ require 'pry'
 
 def load_library(file_path)
   # code goes here
-  require 'yaml'
-  unformatted_libary = YAML.load_file(file_path)
-  #binding.pry
   
   #requirements
   # libary is hash of array key is name of emote and array is english then japanese emote
@@ -23,6 +20,9 @@ def load_library(file_path)
   #   if index = 1
   #   newhash[new_key][:japanese] = item_array(1)
   
+  
+  unformatted_libary = YAML.load_file(file_path)
+
   libary = unformatted_libary.each_with_object({}) do |(emote_name,emote_array),formatted_libary|
     if !formatted_libary[emote_name]
       formatted_libary[emote_name]={:english => nil, :japanese => nil}
@@ -40,6 +40,8 @@ end
 
 def get_japanese_emoticon
   # code goes here
+  load_library
+  binding.pry
 end
 
 def get_english_meaning
