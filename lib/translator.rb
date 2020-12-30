@@ -49,6 +49,8 @@ def get_english_meaning(file_path, english_emote)
   libary = load_library(file_path)
   binding.pry
   
+  libary.each do |name,language|
+    language.find 
   
   
 end
