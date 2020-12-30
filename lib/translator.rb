@@ -25,14 +25,20 @@ def load_library(file_path)
   
   libary = unformatted_libary.each_with_object({}) do |(emote_name,emote_array),formatted_libary|
     formatted_libary[emote_name]={:english => nil, :japanese => nil}
+    binding.pry
     emote_array.each do |index|
       if emote_array(index) = 0
-        
-        
-      
-  
-  
-  hash
+        formatted_libary[emote_name][:english] => emote_array(index)
+        binding.pry
+      elsif emote_array(index) = 1
+        formatted_libary[emote_name][:japanese] => emote_array(index)
+        binding.pry
+      else
+        puts "Unexpected array index"
+        exit!
+      end
+    end
+  end
 end
 
 def get_japanese_emoticon
