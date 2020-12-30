@@ -63,11 +63,11 @@ def get_english_meaning(file_path, japanese_emote)
 
   libary.each do |name,language|
     if language.key(japanese_emote)
-      binding.pry
-      answer = language[:english]
+      #binding.pry
+      answer = libary.key(language)
       #binding.pry
     end
   end
- # binding.pry
+  binding.pry
   answer
 end
