@@ -7,7 +7,7 @@ def load_library(file_path)
   # code goes here
   require 'yaml'
   unformatted_libary = YAML.load(File.open(file_path))
-  binding.pry
+  #binding.pry
   
   #requirements
   # libary is hash of array key is name of emote and array is english then japanese emote
