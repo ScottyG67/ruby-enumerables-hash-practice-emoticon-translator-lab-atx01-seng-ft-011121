@@ -50,7 +50,12 @@ def get_english_meaning(file_path, english_emote)
   binding.pry
   
   libary.each do |name,language|
-    language.find 
+    binding.pry
+    language.find do |emote| 
+      english_emote
+      binding.pry
+    end
+  end
   
   
 end
