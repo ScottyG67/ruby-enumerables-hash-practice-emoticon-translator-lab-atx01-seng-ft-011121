@@ -46,7 +46,7 @@ def get_japanese_emoticon(file_path, english_emote)
 
   libary.each do |name,language|
     if language.key(english_emote)
-      binding.pry
+      #binding.pry
       answer = language[:japanese]
       #binding.pry
     end
