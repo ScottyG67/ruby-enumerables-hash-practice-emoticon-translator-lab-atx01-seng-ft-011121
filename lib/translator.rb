@@ -6,7 +6,7 @@ require 'pry'
 def load_library(file_path)
   # code goes here
   require 'yaml'
-  libary = YAML.load(File.open(file_path))
+  unformatted_libary = YAML.load(File.open(file_path))
   binding.pry
   
   #requirements
@@ -20,6 +20,10 @@ def load_library(file_path)
   #   for each index in item array
   #   if index = 0
   #   newhash[new_key][:english] = item_array(0)
+  #   if index = 1
+  #   newhash[new_key][:japanese] = item_array(1)
+  
+  unformatted_libary.
   
   
   hash
