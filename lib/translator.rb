@@ -54,6 +54,7 @@ def get_english_meaning(file_path, japanese_emote)
     binding.pry
     if language.key(:japanese => japanese_emote)
       answer = language[:english]
+    end
   end
   binding.pry
   answer
