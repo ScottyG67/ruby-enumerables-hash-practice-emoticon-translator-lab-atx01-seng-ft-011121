@@ -44,15 +44,15 @@ def get_japanese_emoticon(file_path, english_emote)
   binding.pry
 end
 
-def get_english_meaning(file_path, english_emote)
+def get_english_meaning(file_path, japanese_emote)
   # code goes here
   libary = load_library(file_path)
   binding.pry
   
   libary.each do |name,language|
     binding.pry
-    language.find do |emote| 
-      english_emote
+    answer = language.find do |emote| 
+      japanese_emote
       binding.pry
     end
   end
