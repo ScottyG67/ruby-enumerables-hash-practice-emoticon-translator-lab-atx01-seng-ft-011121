@@ -46,10 +46,10 @@ def get_japanese_emoticon(file_path, english_emote)
 
   libary.each do |name,language|
     if language.key(english_emote)
-      #binding.pry
       answer = language[:japanese]
-      #binding.pry
+      break
     end
+    answer = "Sorry, that emoticon was not found"
   end
 
   answer
@@ -63,13 +63,11 @@ def get_english_meaning(file_path, japanese_emote)
 
   libary.each do |name,language|
     if language.key(japanese_emote)
-      #binding.pry
       answer = libary.key(language)
       break
-      #binding.pry
     end
     answer = "Sorry, that emoticon was not found"
   end
-  #binding.pry
+  
   answer
 end
