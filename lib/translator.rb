@@ -50,7 +50,7 @@ def get_english_meaning(file_path, japanese_emote)
   binding.pry
   
   japanese_emote = "☜(⌒▽⌒)☞"
-  libary.each do |name,language_hash|
+  libary.each do |name,language|
     binding.pry
     answer = language.find do |emote| 
       japanese_emote
