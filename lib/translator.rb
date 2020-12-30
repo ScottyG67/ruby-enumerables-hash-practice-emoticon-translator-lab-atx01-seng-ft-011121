@@ -37,7 +37,7 @@ def load_library(file_path)
       end
     end
   end
-  binding.pry
+  #binding.pry
   libary
 end
 
