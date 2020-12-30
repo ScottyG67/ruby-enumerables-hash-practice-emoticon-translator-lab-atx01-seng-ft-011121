@@ -29,10 +29,10 @@ def load_library(file_path)
     emote_array.each_with_index do |emote,index|
       binding.pry
       if index == 0
-        formatted_libary[emote_name][:english] = emote_array(index)
+        formatted_libary[emote_name][:english] = emote
         binding.pry
       elsif index == 1
-        formatted_libary[emote_name][:japanese] = emote_array(index)
+        formatted_libary[emote_name][:japanese] = emote
         binding.pry
       end
     end
