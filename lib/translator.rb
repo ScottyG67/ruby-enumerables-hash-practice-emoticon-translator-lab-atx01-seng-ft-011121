@@ -44,6 +44,8 @@ def get_japanese_emoticon(file_path, english_emote)
   binding.pry
 end
 
-def get_english_meaning
+def get_english_meaning(file_path, english_emote)
   # code goes here
+  load_library(file_path)
+  binding.pry
 end
