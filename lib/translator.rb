@@ -50,4 +50,5 @@ def get_english_meaning(file_path, english_emote)
   binding.pry
   
   
+  
 end
