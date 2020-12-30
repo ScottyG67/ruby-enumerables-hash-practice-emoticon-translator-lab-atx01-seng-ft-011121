@@ -3,10 +3,10 @@ require 'yaml'
 require 'pry'
 
 
-def load_library
+def load_library(file_path)
   # code goes here
   require 'yaml'
-  YAML.load(File.open("emoticons.yml"))
+  YAML.load(File.open(file_path))
   binding.pry
 end
 
