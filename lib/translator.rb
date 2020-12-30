@@ -34,9 +34,6 @@ def load_library(file_path)
       elsif index == 1
         formatted_libary[emote_name][:japanese] = emote_array(index)
         binding.pry
-      else
-        puts "Unexpected array index"
-        exit!
       end
     end
   end
