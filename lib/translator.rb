@@ -46,6 +46,6 @@ end
 
 def get_english_meaning(file_path, english_emote)
   # code goes here
-  load_library(file_path)
+  libary = load_library(file_path)
   binding.pry
 end
