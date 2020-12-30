@@ -27,10 +27,10 @@ def load_library(file_path)
     formatted_libary[emote_name]={:english => nil, :japanese => nil}
     binding.pry
     emote_array.each do |index|
-      if emote_array(index) = 0
+      if emote_array(index) == 0
         formatted_libary[emote_name][:english] => emote_array(index)
         binding.pry
-      elsif emote_array(index) = 1
+      elsif emote_array(index) == 1
         formatted_libary[emote_name][:japanese] => emote_array(index)
         binding.pry
       else
