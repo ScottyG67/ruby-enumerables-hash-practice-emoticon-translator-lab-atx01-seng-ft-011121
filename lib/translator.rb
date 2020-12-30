@@ -6,7 +6,7 @@ require 'pry'
 def load_library(file_path)
   # code goes here
   require 'yaml'
-  unformatted_libary = YAML.load(File.open(file_path))
+  unformatted_libary = YAML.load_file(file_path)
   #binding.pry
   
   #requirements
@@ -25,8 +25,8 @@ def load_library(file_path)
   
   libary = unformatted_libary.each_with_object({}) do |(emote_name,emote_array),formatted_libary|
     if !formatted_libary[emote_name]
-    formatted_libary[emote_name]={:english => nil, :japanese => nil}
-    #binding.pry
+      formatted_libary[emote_name]={:english => nil, :japanese => nil}
+    end
     emote_array.each_with_index do |emote,index|
       if index == 0
         formatted_libary[emote_name][:english] = emote
@@ -35,7 +35,6 @@ def load_library(file_path)
       end
     end
   end
-
   libary
 end
 
