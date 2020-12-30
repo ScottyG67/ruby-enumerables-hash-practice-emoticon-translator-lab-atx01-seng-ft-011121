@@ -65,8 +65,10 @@ def get_english_meaning(file_path, japanese_emote)
     if language.key(japanese_emote)
       #binding.pry
       answer = libary.key(language)
+      break
       #binding.pry
     end
+    answer = "Sorry, that emoticon was not found"
   end
   #binding.pry
   answer
