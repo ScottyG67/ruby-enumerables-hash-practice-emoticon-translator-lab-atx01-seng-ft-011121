@@ -27,6 +27,7 @@ def load_library(file_path)
     formatted_libary[emote_name]={:english => nil, :japanese => nil}
     binding.pry
     emote_array.each do |index|
+      binding.pry
       if emote_array(index) == 0
         formatted_libary[emote_name][:english] = emote_array(index)
         binding.pry
