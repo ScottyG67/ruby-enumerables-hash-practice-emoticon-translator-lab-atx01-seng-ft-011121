@@ -49,8 +49,7 @@ def get_english_meaning(file_path, japanese_emote)
   
   libary = load_library(file_path)
   answer=nil
-  japanese_emote = "☜(⌒▽⌒)☞"
-  binding.pry
+
   libary.each do |name,language|
     if language.key(japanese_emote)
       #binding.pry
@@ -58,7 +57,6 @@ def get_english_meaning(file_path, japanese_emote)
       #binding.pry
     end
   end
-  
-  binding.pry
+
   answer
 end
