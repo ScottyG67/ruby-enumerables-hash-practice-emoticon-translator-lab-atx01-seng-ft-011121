@@ -23,7 +23,7 @@ def load_library(file_path)
   #   if index = 1
   #   newhash[new_key][:japanese] = item_array(1)
   
-  unformatted_libary.each_with_object
+  unformatted_libary.each_with_object({})
   
   
   hash
