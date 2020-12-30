@@ -40,8 +40,19 @@ end
 
 def get_japanese_emoticon(file_path, english_emote)
   # code goes here
+  
   libary = load_library(file_path)
-  binding.pry
+  answer=nil
+
+  libary.each do |name,language|
+    if language.key(japanese_emote)
+      #binding.pry
+      answer = language[:english]
+      #binding.pry
+    end
+  end
+
+  answer
 end
 
 def get_english_meaning(file_path, japanese_emote)
